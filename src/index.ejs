@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Down-Bad-Home-Page</title>
+        <script type='text/javascript' src='./index.js'></script>
+    </head>
+    <body>
+        <div class="drain">
+            Recent Down Badders (this took my 3 hours to set up lol):
+            <br>
+            <br>
+            <div class="main">
+                <%= downBadList %>
+            </div>
+        </div>
+        <div class="drain1">
+            Total Down Badders:
+            <br>
+            <br>
+            <div class="main1">
+                <%= totalDownBadders %>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="drain2">
+            Total Auths:
+            <br>
+            <br>
+            <div class="main1">
+                <%= numberOfAuths %>
+            </div>
+        </div>
+    </body>
+    <style>
+        .main {
+            color: rgb(33, 124, 209);
+            max-width: 145px;
+            max-height: 200px;
+            overflow: hidden;
+        }
+        .main1 {
+            color: rgb(33, 124, 209);
+            width: 150px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .drain {
+            float: left;
+        }
+        .drain1 {
+            margin-left: 30%;
+        }
+        .drain2 {
+            display: block;
+            top: 50%;
+            margin-left: auto;
+        }
+    </style>
+</html>
